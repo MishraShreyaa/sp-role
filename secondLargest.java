@@ -2,25 +2,25 @@ import java.util.*;
 
 public class secondLargest {
     public static int solve  (int[] A) {
-     int L= Integer.MIN_VALUE; // largest
-    int  SL=Integer.MIN_VALUE; // SecondLargest
+     int Largest= Integer.MIN_VALUE; // largest
+    int  secondLargest=Integer.MIN_VALUE; // SecondLargest
      for(int i=0; i<A.length; i++){
-        if( L < A[i] )
+        if( Largest < A[i] )
         {
-            SL= L;
-            L=A[i];
+            secondLargest= Largest;
+            Largest=A[i];
 
         }
-        else if ( A[i] < L && SL< A[i]){
-            SL= A[i];
+        else if ( A[i] < Largest && secondLargest< A[i]){
+            secondLargest= A[i];
         }
 
      }
-      if ( SL== Integer.MIN_VALUE){
+      if ( secondLargest== Integer.MIN_VALUE){
         return -1;
 
       }
-       return SL;
+       return secondLargest;
 
 
 

@@ -22,6 +22,6 @@ public class RemoveDuplicates {
         }
         int result= solve(A);
         System.out.println(result);
-
+        sc.close();
     }
 }

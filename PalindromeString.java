@@ -24,6 +24,7 @@ public class PalindromeString {
         String A= sc.nextLine();
         String result = solve(A);
         System.out.println(result);
+        sc.close();
     }
     
 }
